@@ -8,6 +8,9 @@ HackATL is a business hackathon hosted by Emory Entrepreneurship and Venture Man
 The app includes information regarding events, scheduling, and judging. 
 
 This app is maintained by the technology division of EEVM
+https://www.eevm.org/
+
+Questions can be directed towards contact@eevm.org
 
 
 
