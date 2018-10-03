@@ -6,50 +6,39 @@
  * @flow
  */
 
-import React, {Component, createStackNavigator} from 'react';
-import {name as appName} from './app.json';
+import React, {Component} from 'react';
+import {StackNavigator } from 'react-navigation';
 import {Button, AppRegistry, Platform, StyleSheet, Text, View} from 'react-native';
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+  D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+import Home from './src/screens/Home';
+import Agenda from './src/screens/Agenda';
+import Faq from './src/screens/Faq';
+import Inbox from './src/screens/Inbox';
+import Map from './src/screens/Map';
+import Pitch from './src/screens/Pitch';
 
-export default class App extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Button title="Hello World"
-          // onPress={() =>
-          // //  navigate('Home', { name: 'Jane' })
-          // }
-        >
-        </Button>
-        <Text> Test of Text </Text>
-      </View>
-    );
+
+//This is the first page the app goes to, but this holds all the screens
+//and then navigates to the first one
+const Navigation = StackNavigator({
+  Home:{
+    screen:Home
+  },
+  Agenda:{
+    screen:Agenda
+  },
+  Faq:{
+    screen:Faq
+  },
+  Inbox:{
+    screen:Inbox
+  },
+  Map:{
+    screen:Map
+  },
+  Pitch:{
+    screen:Pitch
   }
-}
+}) 
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
-
-AppRegistry.registerComponent(appName, () => App);
+export default Navigation
