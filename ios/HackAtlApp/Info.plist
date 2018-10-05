@@ -55,8 +55,6 @@
 	</dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Gotham Book.otf</string>
-		<string>Gotham Light.otf</string>
 		<string>Gotham Medium.ttf</string>
 		<string>AntDesign.ttf</string>
 		<string>Entypo.ttf</string>
