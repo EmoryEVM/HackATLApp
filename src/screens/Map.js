@@ -207,7 +207,7 @@ class Floor5 extends Component {
     );
   }
 }
-const Map = createMaterialTopTabNavigator(
+const MapNavigator = createMaterialTopTabNavigator(
   {
     1: {
       screen: Floor1,
@@ -255,7 +255,19 @@ const Map = createMaterialTopTabNavigator(
   }
 );
 
-export default Map
+
+export default class Map extends Component {
+  static navigationOptions = {
+    title: "Map"
+  };
+  render() {
+    var { navigate } = this.props.navigation;
+    return (
+      <MapNavigator />
+    );
+  }
+}
+// export default Map
 
 const styles = StyleSheet.create({
   floors: {
