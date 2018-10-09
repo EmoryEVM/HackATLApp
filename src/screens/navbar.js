@@ -1,10 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
 
 import React, {Component} from 'react';
 import {StackNavigator } from 'react-navigation';
@@ -18,8 +11,8 @@ import Map from './src/screens/Map';
 import Pitch from './src/screens/Pitch';
 
 
-//This is the first page the app goes to, but this holds all the screens
-//and then navigates to the first one
+
+
 const Navigation = StackNavigator({
   Home:{
     screen:Home
@@ -42,19 +35,3 @@ const Navigation = StackNavigator({
 }) 
 
 export default Navigation
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
