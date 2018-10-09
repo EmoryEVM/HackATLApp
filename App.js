@@ -68,3 +68,19 @@ const Navigation = createBottomTabNavigator(
 )
 
 export default Navigation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
