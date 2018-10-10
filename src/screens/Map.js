@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, Image, StyleSheet, ScrollView } from 'react-native'
+import { Text, View, Image, StyleSheet, ScrollView, SafeAreaView } from 'react-native'
 import { createMaterialTopTabNavigator } from 'react-navigation'
 
 
@@ -261,15 +261,19 @@ export default class Map extends Component {
     title: "Map"
   };
   render() {
-    var { navigate } = this.props.navigation;
+    let { navigate } = this.props.navigation;
     return (
-      <MapNavigator />
+      <SafeAreaView style={styles.safeArea}>
+        <MapNavigator />
+      </SafeAreaView>
     );
   }
 }
-// export default Map
 
 const styles = StyleSheet.create({
+  safeArea: {
+    flex: 1
+  },
   floors: {
     flex: 1,
     backgroundColor: '#FFF',
