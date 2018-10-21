@@ -6,6 +6,15 @@
  * @flow
  */
 
+import { StackNavigator } from 'react-navigation'
+import {
+  Button,
+  AppRegistry,
+  Platform,
+  StyleSheet,
+  Text,
+  View
+} from 'react-native'
 import React, {Component} from 'react';
 import {createBottomTabNavigator} from 'react-navigation';
 import Ionicons from 'react-native-vector-icons/Ionicons';
