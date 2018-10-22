@@ -14,7 +14,8 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View, 
+  Image
 } from 'react-native'
 
 export default class Home extends Component {
@@ -35,10 +36,13 @@ export default class Home extends Component {
         <View style={styles.imageWrapper}>
           <Image
             style={styles.logo}
-            source={require('../assets/logo_pbeevm_black.png')}
+            source={require('../assets/HackATL2018Logo.png')}
           />
+
         </View>
-        <Text>Oct 19-21 2018</Text>
+        <Text style={styles.dateText} >Oct 19-21 2018</Text>
+
+        {/* 
         <TouchableOpacity onPress={() => navigate('Agenda')}>
           <Text style={styles.button}>Go to agenda</Text>
         </TouchableOpacity>
@@ -54,6 +58,7 @@ export default class Home extends Component {
         <Button title="Go to Map" onPress={() => navigate('Map')} />
 
         <Button title="Go to Pitch" onPress={() => navigate('Pitch')} />
+        */}
       </View>
     )
   }
@@ -90,5 +95,9 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
     resizeMode: 'contain'
-  }
+  },
+  dateText:{
+    fontSize: 24, 
+    fontWeight: 'bold',
+  },
 })

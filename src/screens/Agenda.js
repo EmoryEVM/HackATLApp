@@ -8,7 +8,7 @@
 
 import React, {Component} from 'react';
 import {StackNavigator } from 'react-navigation';
-import {Button, AppRegistry, ScrollView, Platform, StyleSheet, Text, View} from 'react-native';
+import {Button, AppRegistry, ScrollView, Platform, StyleSheet, Text, View, SafeAreaView} from 'react-native';
 import { createMaterialTopTabNavigator } from 'react-navigation'
 
 
@@ -26,7 +26,7 @@ class Pre extends Component {
         <View style={styles.eventContainer}> 
           <Text style={styles.timeStyle}>7:00PM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Workshop 1 </Text>
+            <Text style={styles.agendaTitle}> Web Development Workshop</Text>
             <Text style={styles.locationTitle}> GBS 208 </Text>
           </View> 
         </View> 
@@ -34,8 +34,8 @@ class Pre extends Component {
         <View style={styles.eventContainer}> 
           <Text style={styles.timeStyle}>7:00PM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Workshop 2 </Text>
-            <Text style={styles.locationTitle}> GBS 323 </Text>
+            <Text style={styles.agendaTitle}> Workshop 2 - Mobile App Development</Text>
+            <Text style={styles.locationTitle}> GBS 334 </Text>
           </View>
         </View> 
 
@@ -429,7 +429,10 @@ export default class Agenda extends Component {
   render() {
     var { navigate } = this.props.navigation;
     return (
-      <AgendaNavigator />
+      <SafeAreaView style={styles.safeArea}>
+        <AgendaNavigator />
+      </SafeAreaView>
+      
     );
   }
 }
@@ -439,6 +442,9 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#FFF',
     padding: 15,
+  },
+  safeArea: {
+    flex: 1
   },
   container: {
     flex: 1,
