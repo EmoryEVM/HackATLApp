@@ -14,30 +14,68 @@ import { createMaterialTopTabNavigator } from 'react-navigation'
 
 class Pre extends Component {
   static navigationOptions = {
-    title: "Agenda"
+    title: "Description"
   };
   render() { 
     var {navigate} = this.props.navigation;
     return (
       <View style={styles.container}>
 
-
       <ScrollView>
-        <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>9/27</Text>
-          <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Web Development Workshop</Text>
-            <Text style={styles.locationTitle}> GBS 208 </Text>
-          </View> 
-        </View> 
 
-        <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>10/11</Text>
+
+      <View style={styles.descContainer}> 
+
+      <Text style={styles.descPageTitle}> Workshop Descriptions </Text>
+
+        <View style={styles.descContainerInside}>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> App Development Workshop</Text>
-            <Text style={styles.locationTitle}> GBS 334 </Text>
+            <Text style={styles.descTitle}> IDEATION </Text>
+            <Text style={styles.descHost}> Design Bloc </Text>
+            <Text style={styles.descText}>This workshop is intended to help you identify problems and
+solutions to those problems when you’re developing your
+HackATL idea. Whether you’re a seasoned hackathoner
+or a newcomer, we recommend going to this workshop. </Text>
+          </View> 
           </View>
-        </View> 
+
+          <View style={styles.descContainerInside}>
+          <View style={styles.eventDetails}> 
+            <Text style={styles.descTitle}> UX 101 </Text>
+            <Text style={styles.descHost}> Facebook </Text>
+            <Text style={styles.descText}>Now that you have your idea, you need to make it a
+reality! As an entrepreneur, you want your product to be
+user-friendly and well-designed. This workshop will give you
+the skills to turn your idea into a product with the best user
+experience possible. </Text>
+          </View> 
+          </View>
+
+          <View style={styles.descContainerInside}>
+          <View style={styles.eventDetails}> 
+            <Text style={styles.descTitle}> DESIGN STRATEGY </Text>
+            <Text style={styles.descHost}> Sun Trust </Text>
+            <Text style={styles.descText}> Design strategy is the marriage between great marketing strategy
+and flawless design execution. Come get the insider scoop on
+how to elevate your idea with this workshop by SunTrust. </Text>
+          </View> 
+          </View>
+
+          <View style={styles.descContainerInside}>
+          <View style={styles.eventDetails}> 
+            <Text style={styles.descTitle}> PITCH PERFECT </Text>
+            <Text style={styles.descHost}> Excellerator </Text>
+            <Text style={styles.descText}>Now that you’ve got your product, you need to sell it! Come by
+Excellerator’s Pitch Perfect pitch practice to get feedback on
+your pitching skills from investors and industry insiders. </Text>
+          </View> 
+          </View>
+
+
+
+      </View> 
+
+        
 
  
        </ScrollView>
@@ -78,17 +116,17 @@ class Fri extends Component {
         </View> 
 
         <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>6:00PM</Text>
+          <Text style={styles.timeStyle}>5:00PM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Keynote </Text>
-            <Text style={styles.locationTitle}> Coke Commons </Text>
+            <Text style={styles.agendaTitle}> HackATL Kickoff </Text>
+            <Text style={styles.locationTitle}> Patterson Green </Text>
           </View>
         </View> 
 
         <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>6:45PM</Text>
+          <Text style={styles.timeStyle}>6:30PM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> HackATL Directors Intro </Text>
+            <Text style={styles.agendaTitle}> Logistics Presentation </Text>
             <Text style={styles.locationTitle}> Jenkin's Courtyard </Text>
           </View>
         </View> 
@@ -96,42 +134,35 @@ class Fri extends Component {
         <View style={styles.eventContainer}> 
           <Text style={styles.timeStyle}>7:00PM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Dinner & Co-founder Networking </Text>
-            <Text style={styles.locationTitle}> Patterson Green </Text>
+            <Text style={styles.agendaTitle}> Dinner </Text>
+            <Text style={styles.locationTitle}> Coke Commons </Text>
           </View> 
         </View> 
 
         <View style={styles.eventContainer}> 
           <Text style={styles.timeStyle}>8:00PM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Stage 1: Ideation Workshop </Text>
-            <Text style={styles.locationTitle}> GBS 130 </Text>
+            <Text style={styles.agendaTitle}> Ideation Workshop </Text>
+            <Text style={styles.locationTitle}> GBS 208 </Text>
           </View> 
         </View> 
 
         <View style={styles.eventContainer}> 
           <Text style={styles.timeStyle}>8:45PM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Division Split: Industry Discussion </Text>
-            <Text style={styles.locationTitle}> TBA </Text>
+            <Text style={styles.agendaTitle}> Category Breakout </Text>
+            <Text style={styles.locationTitle}> *Refer to Agenda* </Text>
           </View> 
         </View> 
 
         <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>11:30PM</Text>
+          <Text style={styles.timeStyle}>12:00AM</Text>
           <View style={styles.eventDetails}> 
             <Text style={styles.agendaTitle}> Midnight Snacks </Text>
             <Text style={styles.locationTitle}> Coke Commons </Text>
           </View> 
         </View> 
 
-        <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>9:00PM</Text>
-          <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Google Workshop </Text>
-            <Text style={styles.locationTitle}> GBS 130 </Text>
-          </View> 
-        </View> 
        </ScrollView>
 
 
@@ -164,16 +195,16 @@ class Sat extends Component {
         <View style={styles.eventContainer}> 
           <Text style={styles.timeStyle}>10:00AM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Stage 2: Business Modeling </Text>
-            <Text style={styles.locationTitle}> GBS 130 </Text>
+            <Text style={styles.agendaTitle}> Blockchain Workshop </Text>
+            <Text style={styles.locationTitle}> GBS 301 </Text>
           </View>
         </View> 
 
         <View style={styles.eventContainer}> 
           <Text style={styles.timeStyle}>11:00AM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Work Time </Text>
-            <Text style={styles.locationTitle}> Everywhere </Text>
+            <Text style={styles.agendaTitle}> UX 101 Workshop </Text>
+            <Text style={styles.locationTitle}> GBS 301 </Text>
           </View>
         </View> 
 
@@ -186,42 +217,18 @@ class Sat extends Component {
         </View> 
 
         <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>1:00PM</Text>
-          <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Stage 2: Prototyping </Text>
-            <Text style={styles.locationTitle}> GBS 130 </Text>
-          </View> 
-        </View> 
-
-        <View style={styles.eventContainer}> 
           <Text style={styles.timeStyle}>2:00PM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Work Time </Text>
-            <Text style={styles.locationTitle}> Everywhere </Text>
+            <Text style={styles.agendaTitle}> Strategy Workshop </Text>
+            <Text style={styles.locationTitle}> GBS 301 </Text>
           </View> 
         </View> 
 
         <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>3:00PM</Text>
+          <Text style={styles.timeStyle}>2:30PM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Snack Break </Text>
+            <Text style={styles.agendaTitle}> Snacks </Text>
             <Text style={styles.locationTitle}> Coke Commons </Text>
-          </View> 
-        </View> 
-
-        <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>4:00PM</Text>
-          <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Stage 3: VC & Monetization </Text>
-            <Text style={styles.locationTitle}> GBS 130 </Text>
-          </View> 
-        </View> 
-
-        <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>5:00PM</Text>
-          <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Work Time </Text>
-            <Text style={styles.locationTitle}> Everywhere </Text>
           </View> 
         </View> 
 
@@ -234,23 +241,15 @@ class Sat extends Component {
         </View>
 
         <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>8:00PM</Text>
+          <Text style={styles.timeStyle}>9:00PM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Stage 4: How to Pitch </Text>
+            <Text style={styles.agendaTitle}> Pitch Perfect Workshop </Text>
             <Text style={styles.locationTitle}> GBS 130 </Text>
           </View> 
         </View> 
 
         <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>10:00PM</Text>
-          <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Red Bull Hour </Text>
-            <Text style={styles.locationTitle}> Coke Commons </Text>
-          </View> 
-        </View> 
-
-        <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>11:30PM</Text>
+          <Text style={styles.timeStyle}>12:00AM</Text>
           <View style={styles.eventDetails}> 
             <Text style={styles.agendaTitle}> Midnight Snacks </Text>
             <Text style={styles.locationTitle}> Coke Commons </Text>
@@ -293,23 +292,15 @@ class Sun extends Component {
           <Text style={styles.timeStyle}>9:00AM</Text>
           <View style={styles.eventDetails}> 
             <Text style={styles.agendaTitle}> First Round Pitches </Text>
-            <Text style={styles.locationTitle}> TBA </Text>
+            <Text style={styles.locationTitle}> *Refer to Agenda* </Text>
           </View>
         </View> 
 
         <View style={styles.eventContainer}> 
           <Text style={styles.timeStyle}>1:00PM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Judges Deliberation</Text>
-            <Text style={styles.locationTitle}> - </Text>
-          </View>
-        </View> 
-
-        <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>1:00PM</Text>
-          <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Lunch & HackATL Fair </Text>
-            <Text style={styles.locationTitle}> Jenkin's Courtyard </Text>
+            <Text style={styles.agendaTitle}> Lunch</Text>
+            <Text style={styles.locationTitle}> Coke Commons </Text>
           </View>
         </View> 
 
@@ -341,30 +332,31 @@ class Sun extends Component {
 
 const AgendaNavigator = createMaterialTopTabNavigator(
   {
+    
     1: {
-      screen: Pre,
-      navigationOptions: {
-        tabBarLabel: 'Pre',
-      }
-    },
-    2: {
       screen: Fri,
       navigationOptions: {
         tabBarLabel: 'Fri',
       }
     },
-    3: {
+    2: {
       screen: Sat,
       navigationOptions: {
         tabBarLabel: 'Sat',
       }
     },
-    4: {
+    3: {
       screen: Sun,
       navigationOptions: {
         tabBarLabel: 'Sun',
       }
-    }
+    }, 
+    4: {
+      screen: Pre,
+      navigationOptions: {
+        tabBarLabel: 'Desc.',
+      }
+    },
   }, {
     tabBarOptions: {
       activeTintColor: '#8b7ab3',
@@ -417,11 +409,38 @@ const styles = StyleSheet.create({
     marginTop: 10,
     marginBottom: 10
   },
+  descContainer: {
+
+    flexDirection: "column",
+    marginTop: 10,
+    marginBottom: 40,
+    alignItems: 'center'
+  },
+  descHost: {
+    marginBottom: 5, 
+    fontFamily: 'Gotham-Light',
+    color: '#444',
+
+  },
+  descContainerInside: {
+
+    marginTop: 20, 
+    width: '90%', 
+  },
   agendaTitle: {
     flex: 2,
     backgroundColor: '#fff',
     fontSize: 18,
+    marginBottom:5,
   }, 
+  descTitle: {
+    fontSize: 18, 
+    fontWeight: 'bold',
+    marginBottom: 3, 
+  },
+  descText: {
+    fontSize: 14,
+  },
   eventDetails: {
     flex: 3,
   },
@@ -431,6 +450,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     fontSize: 14,
     // alignSelf: 'center'
+  },
+  descPageTitle: {
+    fontFamily: 'Gotham-Light',
+    color: '#8b7ab3',
+    fontWeight: 'bold',
+    fontSize: 20
   },
   timeStyle: {
     flex: 1,

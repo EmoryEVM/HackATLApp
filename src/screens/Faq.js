@@ -307,38 +307,38 @@ class SplashScreen extends Component {
       <ScrollView >
         <View style={styles.splashContainer}>
         <View style={styles.buttonContainer}>
-          <TouchableOpacity onPress={() => navigate("About")} style={styles.button}>
+          <TouchableOpacity onPress={() => navigate("About")} style={[styles.button, styles.purpleOne]}>
             <Text style={styles.buttonText}>Sponsors</Text>
           </TouchableOpacity>
         </View>
         <View style={styles.buttonContainer}>
-          <TouchableOpacity onPress={() => navigate("General")} style={styles.button}>
+          <TouchableOpacity onPress={() => navigate("General")} style={[styles.button, styles.purpleTwo]}>
             <Text style={styles.buttonText}>Transportation</Text>
           </TouchableOpacity>
         </View>
         <View style={styles.buttonContainer}>
-          <TouchableOpacity onPress={() => navigate("Prizes")} style={styles.button}>
+          <TouchableOpacity onPress={() => navigate("Prizes")} style={[styles.button, styles.purpleThree]}>
             <Text style={styles.buttonText}>Prizes</Text>
           </TouchableOpacity>
         </View>
         <View style={styles.buttonContainer}>
-          <TouchableOpacity onPress={() => navigate("Rules")} style={styles.button}>
+          <TouchableOpacity onPress={() => navigate("Rules")} style={[styles.button, styles.purpleFour]}>
             <Text style={styles.buttonText}>Rules</Text>
           </TouchableOpacity>
         </View>
 
         <View style={styles.buttonContainer}>
-          <TouchableOpacity onPress={() => navigate("Packing")} style={styles.button}>
+          <TouchableOpacity onPress={() => navigate("Packing")} style={[styles.button, styles.purpleFive]}>
             <Text style={styles.buttonText}>Packing</Text>
           </TouchableOpacity>
         </View>
         <View style={styles.buttonContainer}>
-          <TouchableOpacity onPress={() => navigate("Wifi")} style={styles.button}>
+          <TouchableOpacity onPress={() => navigate("Wifi")} style={[styles.button, styles.purpleSix]}>
             <Text style={styles.buttonText}>Wifi</Text>
           </TouchableOpacity>
         </View>
         <View style={styles.buttonContainer}>
-          <TouchableOpacity onPress={() => navigate("Sleep")} style={styles.button}>
+          <TouchableOpacity onPress={() => navigate("Sleep")} style={[styles.button, styles.purpleSeven]}>
             <Text style={styles.buttonText}>Sleep & Hygiene</Text>
           </TouchableOpacity>
         </View>
@@ -442,5 +442,26 @@ const styles = StyleSheet.create({
   buttonText: {
     fontFamily: 'Gotham-Light',
     fontSize: 18
-  }
+  }, 
+  purpleOne: {
+    backgroundColor: '#c7bbdb'
+  },
+  purpleTwo: {
+    backgroundColor: '#c5c2e0'
+  },
+  purpleThree: {
+    backgroundColor: '#c3c9e4'
+  },
+  purpleFour: {
+    backgroundColor: '#c1d1e9'
+  },
+  purpleFive: {
+    backgroundColor: '#bfd8ee'
+  },
+  purpleSix: {
+    backgroundColor: '#bddff2'
+  },
+  purpleSeven: {
+    backgroundColor: '#bbe6f7'
+  },
 });
