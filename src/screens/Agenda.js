@@ -24,7 +24,7 @@ class Pre extends Component {
 
       <ScrollView>
         <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>7:00PM</Text>
+          <Text style={styles.timeStyle}>9/27</Text>
           <View style={styles.eventDetails}> 
             <Text style={styles.agendaTitle}> Web Development Workshop</Text>
             <Text style={styles.locationTitle}> GBS 208 </Text>
@@ -32,68 +32,14 @@ class Pre extends Component {
         </View> 
 
         <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>7:00PM</Text>
+          <Text style={styles.timeStyle}>10/11</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Workshop 2 - Mobile App Development</Text>
+            <Text style={styles.agendaTitle}> App Development Workshop</Text>
             <Text style={styles.locationTitle}> GBS 334 </Text>
           </View>
         </View> 
 
-        <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>7:00PM</Text>
-          <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Dinner and Networking</Text>
-            <Text style={styles.locationTitle}> Coke Commons </Text>
-          </View>
-        </View> 
-
-        <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>8:00PM</Text>
-          <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Team Building Scavenger Hunt </Text>
-            <Text style={styles.locationTitle}> Patterson Green </Text>
-          </View>
-        </View> 
-
-        <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>9:00PM</Text>
-          <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Google Workshop </Text>
-            <Text style={styles.locationTitle}> GBS 130 </Text>
-          </View> 
-        </View> 
-
-        <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>10:00PM</Text>
-          <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Celebration </Text>
-            <Text style={styles.locationTitle}> Everywhere </Text>
-          </View> 
-        </View> 
-
-        <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>11:00PM</Text>
-          <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Late Night Snacks </Text>
-            <Text style={styles.locationTitle}> Coke Commons </Text>
-          </View> 
-        </View> 
-
-        <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>9:00PM</Text>
-          <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Google Workshop </Text>
-            <Text style={styles.locationTitle}> GBS 130 </Text>
-          </View> 
-        </View> 
-
-        <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>9:00PM</Text>
-          <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Google Workshop </Text>
-            <Text style={styles.locationTitle}> GBS 130 </Text>
-          </View> 
-        </View> 
+ 
        </ScrollView>
 
 
@@ -116,66 +62,66 @@ class Fri extends Component {
 
       <ScrollView>
         <View style={styles.eventContainer}> 
+          <Text style={styles.timeStyle}> 4:30PM </Text>
+          <View style={styles.eventDetails}> 
+            <Text style={styles.agendaTitle}> Early Bird Check In</Text>
+            <Text style={styles.locationTitle}> Patterson Green </Text>
+          </View> 
+        </View> 
+
+        <View style={styles.eventContainer}> 
           <Text style={styles.timeStyle}>5:00PM</Text>
           <View style={styles.eventDetails}> 
             <Text style={styles.agendaTitle}> Check In </Text>
-            <Text style={styles.locationTitle}> Goizetta Business School Arches </Text>
-          </View> 
+            <Text style={styles.locationTitle}> Patterson Green </Text>
+          </View>
         </View> 
 
         <View style={styles.eventContainer}> 
           <Text style={styles.timeStyle}>6:00PM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Keynote Speech </Text>
-            <Text style={styles.locationTitle}> Patterson Green </Text>
+            <Text style={styles.agendaTitle}> Keynote </Text>
+            <Text style={styles.locationTitle}> Coke Commons </Text>
+          </View>
+        </View> 
+
+        <View style={styles.eventContainer}> 
+          <Text style={styles.timeStyle}>6:45PM</Text>
+          <View style={styles.eventDetails}> 
+            <Text style={styles.agendaTitle}> HackATL Directors Intro </Text>
+            <Text style={styles.locationTitle}> Jenkin's Courtyard </Text>
           </View>
         </View> 
 
         <View style={styles.eventContainer}> 
           <Text style={styles.timeStyle}>7:00PM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Dinner and Networking</Text>
-            <Text style={styles.locationTitle}> Coke Commons </Text>
-          </View>
+            <Text style={styles.agendaTitle}> Dinner & Co-founder Networking </Text>
+            <Text style={styles.locationTitle}> Patterson Green </Text>
+          </View> 
         </View> 
 
         <View style={styles.eventContainer}> 
           <Text style={styles.timeStyle}>8:00PM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Team Building Scavenger Hunt </Text>
-            <Text style={styles.locationTitle}> Patterson Green </Text>
-          </View>
-        </View> 
-
-        <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>9:00PM</Text>
-          <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Google Workshop </Text>
+            <Text style={styles.agendaTitle}> Stage 1: Ideation Workshop </Text>
             <Text style={styles.locationTitle}> GBS 130 </Text>
           </View> 
         </View> 
 
         <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>9:00PM</Text>
+          <Text style={styles.timeStyle}>8:45PM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Google Workshop </Text>
-            <Text style={styles.locationTitle}> GBS 130 </Text>
+            <Text style={styles.agendaTitle}> Division Split: Industry Discussion </Text>
+            <Text style={styles.locationTitle}> TBA </Text>
           </View> 
         </View> 
 
         <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>9:00PM</Text>
+          <Text style={styles.timeStyle}>11:30PM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Google Workshop </Text>
-            <Text style={styles.locationTitle}> GBS 130 </Text>
-          </View> 
-        </View> 
-
-        <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>9:00PM</Text>
-          <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Google Workshop </Text>
-            <Text style={styles.locationTitle}> GBS 130 </Text>
+            <Text style={styles.agendaTitle}> Midnight Snacks </Text>
+            <Text style={styles.locationTitle}> Coke Commons </Text>
           </View> 
         </View> 
 
@@ -216,68 +162,104 @@ class Sat extends Component {
         </View> 
 
         <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>1:00PM</Text>
+          <Text style={styles.timeStyle}>10:00AM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Workshop </Text>
-            <Text style={styles.locationTitle}> GBS W500 </Text>
+            <Text style={styles.agendaTitle}> Stage 2: Business Modeling </Text>
+            <Text style={styles.locationTitle}> GBS 130 </Text>
           </View>
         </View> 
 
         <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>4:00PM</Text>
+          <Text style={styles.timeStyle}>11:00AM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Meet and Greet</Text>
+            <Text style={styles.agendaTitle}> Work Time </Text>
             <Text style={styles.locationTitle}> Everywhere </Text>
           </View>
         </View> 
 
         <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>8:00PM</Text>
+          <Text style={styles.timeStyle}>12:00PM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Team Building Scavenger Hunt </Text>
-            <Text style={styles.locationTitle}> Patterson Green </Text>
+            <Text style={styles.agendaTitle}> Lunch </Text>
+            <Text style={styles.locationTitle}> Coke Commons </Text>
           </View>
         </View> 
 
         <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>9:00PM</Text>
+          <Text style={styles.timeStyle}>1:00PM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Google Workshop </Text>
+            <Text style={styles.agendaTitle}> Stage 2: Prototyping </Text>
             <Text style={styles.locationTitle}> GBS 130 </Text>
           </View> 
         </View> 
 
         <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>9:00PM</Text>
+          <Text style={styles.timeStyle}>2:00PM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Google Workshop </Text>
+            <Text style={styles.agendaTitle}> Work Time </Text>
+            <Text style={styles.locationTitle}> Everywhere </Text>
+          </View> 
+        </View> 
+
+        <View style={styles.eventContainer}> 
+          <Text style={styles.timeStyle}>3:00PM</Text>
+          <View style={styles.eventDetails}> 
+            <Text style={styles.agendaTitle}> Snack Break </Text>
+            <Text style={styles.locationTitle}> Coke Commons </Text>
+          </View> 
+        </View> 
+
+        <View style={styles.eventContainer}> 
+          <Text style={styles.timeStyle}>4:00PM</Text>
+          <View style={styles.eventDetails}> 
+            <Text style={styles.agendaTitle}> Stage 3: VC & Monetization </Text>
             <Text style={styles.locationTitle}> GBS 130 </Text>
           </View> 
         </View> 
 
         <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>9:00PM</Text>
+          <Text style={styles.timeStyle}>5:00PM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Google Workshop </Text>
+            <Text style={styles.agendaTitle}> Work Time </Text>
+            <Text style={styles.locationTitle}> Everywhere </Text>
+          </View> 
+        </View> 
+
+        <View style={styles.eventContainer}> 
+          <Text style={styles.timeStyle}>6:00PM</Text>
+          <View style={styles.eventDetails}> 
+            <Text style={styles.agendaTitle}> Dinner </Text>
+            <Text style={styles.locationTitle}> Coke Commons </Text>
+          </View> 
+        </View>
+
+        <View style={styles.eventContainer}> 
+          <Text style={styles.timeStyle}>8:00PM</Text>
+          <View style={styles.eventDetails}> 
+            <Text style={styles.agendaTitle}> Stage 4: How to Pitch </Text>
             <Text style={styles.locationTitle}> GBS 130 </Text>
           </View> 
         </View> 
 
         <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>9:00PM</Text>
+          <Text style={styles.timeStyle}>10:00PM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Google Workshop </Text>
-            <Text style={styles.locationTitle}> GBS 130 </Text>
+            <Text style={styles.agendaTitle}> Red Bull Hour </Text>
+            <Text style={styles.locationTitle}> Coke Commons </Text>
           </View> 
         </View> 
 
         <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>9:00PM</Text>
+          <Text style={styles.timeStyle}>11:30PM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Google Workshop </Text>
-            <Text style={styles.locationTitle}> GBS 130 </Text>
+            <Text style={styles.agendaTitle}> Midnight Snacks </Text>
+            <Text style={styles.locationTitle}> Coke Commons </Text>
           </View> 
         </View> 
+
+
+
+
        </ScrollView>
 
 
@@ -300,76 +282,53 @@ class Sun extends Component {
 
       <ScrollView>
         <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>5:00PM</Text>
+          <Text style={styles.timeStyle}>8:00AM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Check In </Text>
-            <Text style={styles.locationTitle}> Goizetta Business School Arches </Text>
+            <Text style={styles.agendaTitle}> Breakfast </Text>
+            <Text style={styles.locationTitle}>Coke Commons </Text>
           </View> 
         </View> 
 
         <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>6:00PM</Text>
+          <Text style={styles.timeStyle}>9:00AM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Keynote Speech </Text>
-            <Text style={styles.locationTitle}> Patterson Green </Text>
+            <Text style={styles.agendaTitle}> First Round Pitches </Text>
+            <Text style={styles.locationTitle}> TBA </Text>
           </View>
         </View> 
 
         <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>7:00PM</Text>
+          <Text style={styles.timeStyle}>1:00PM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Dinner and Networking</Text>
-            <Text style={styles.locationTitle}> Coke Commons </Text>
+            <Text style={styles.agendaTitle}> Judges Deliberation</Text>
+            <Text style={styles.locationTitle}> - </Text>
           </View>
         </View> 
 
         <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>8:00PM</Text>
+          <Text style={styles.timeStyle}>1:00PM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Team Building Scavenger Hunt </Text>
-            <Text style={styles.locationTitle}> Patterson Green </Text>
+            <Text style={styles.agendaTitle}> Lunch & HackATL Fair </Text>
+            <Text style={styles.locationTitle}> Jenkin's Courtyard </Text>
           </View>
         </View> 
 
         <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>9:00PM</Text>
+          <Text style={styles.timeStyle}>2:00PM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Google Workshop </Text>
+            <Text style={styles.agendaTitle}> Final Round Pitches </Text>
             <Text style={styles.locationTitle}> GBS 130 </Text>
           </View> 
         </View> 
 
         <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>9:00PM</Text>
+          <Text style={styles.timeStyle}>3:30PM</Text>
           <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Google Workshop </Text>
+            <Text style={styles.agendaTitle}> Closing Ceremony </Text>
             <Text style={styles.locationTitle}> GBS 130 </Text>
           </View> 
         </View> 
-
-        <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>9:00PM</Text>
-          <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Google Workshop </Text>
-            <Text style={styles.locationTitle}> GBS 130 </Text>
-          </View> 
-        </View> 
-
-        <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>9:00PM</Text>
-          <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Google Workshop </Text>
-            <Text style={styles.locationTitle}> GBS 130 </Text>
-          </View> 
-        </View> 
-
-        <View style={styles.eventContainer}> 
-          <Text style={styles.timeStyle}>9:00PM</Text>
-          <View style={styles.eventDetails}> 
-            <Text style={styles.agendaTitle}> Google Workshop </Text>
-            <Text style={styles.locationTitle}> GBS 130 </Text>
-          </View> 
-        </View> 
+        
        </ScrollView>
 
 
@@ -450,6 +409,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     backgroundColor: '#fff',
+    paddingTop: 20
   },
   eventContainer: {
     height: 50,

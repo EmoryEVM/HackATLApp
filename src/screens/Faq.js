@@ -183,15 +183,96 @@ class AboutScreen extends Component {
           <Text style={styles.faqTitle}>Sponsors</Text>
           <Sponsors />
         </View>
+
+      </ScrollView>
+    )
+  }
+}
+
+class RulesScreen extends Component {
+  static navigationOptions = {
+    title: 'Rules'
+  }
+  render() {
+    return (
+      <ScrollView style={styles.container}>
+
         <View>
           <Rules />
         </View>
+
+      </ScrollView>
+    )
+  }
+}
+
+class PackingScreen extends Component {
+  static navigationOptions = {
+    title: 'Packing'
+  }
+  render() {
+    return (
+      <ScrollView style={styles.container}>
+
         <View>
-          <CodeOfConduct />
+          <Packing />
         </View>
+
+      </ScrollView>
+    )
+  }
+}
+
+class WifiScreen extends Component {
+  static navigationOptions = {
+    title: 'Wifi'
+  }
+  render() {
+    return (
+      <ScrollView style={styles.container}>
+
+        <View>
+          <Wifi />
+        </View>
+
+      </ScrollView>
+    )
+  }
+}
+
+class SleepScreen extends Component {
+  static navigationOptions = {
+    title: 'Sleep & Hygiene'
+  }
+  render() {
+    return (
+      <ScrollView style={styles.container}>
+
+        <View>
+          <Sleep />
+        </View>
+
+        <View>
+          <Shower />
+        </View>
+
+      </ScrollView>
+    )
+  }
+}
+
+class PrizesScreen extends Component {
+  static navigationOptions = {
+    title: 'Prizes'
+  }
+  render() {
+    return (
+      <ScrollView style={styles.container}>
+        
         <View>
           <Prizes />
         </View>
+
       </ScrollView>
     )
   }
@@ -199,7 +280,7 @@ class AboutScreen extends Component {
 
 class GeneralScreen extends Component {
   static navigationOptions = {
-    title: 'General Questions'
+    title: 'Transportation'
   }
   render() {
     return (
@@ -207,21 +288,9 @@ class GeneralScreen extends Component {
         <View>
           <Transporation />
         </View>
-        <View>
-          <Packing />
-        </View>
-        <View>
-          <Wifi />
-        </View>
-        <View>
-          <Print />
-        </View>
-        <View>
-          <Sleep />
-        </View>
-        <View>
-          <Shower />
-        </View>
+
+       
+
       </ScrollView>
     )
   }
@@ -234,18 +303,49 @@ class SplashScreen extends Component {
   render() {
     let { navigate } = this.props.navigation;
     return (
-      <SafeAreaView style={styles.splashContainer}>
+      // <SafeAreaView style={styles.splashContainer}>
+      <ScrollView >
+        <View style={styles.splashContainer}>
         <View style={styles.buttonContainer}>
           <TouchableOpacity onPress={() => navigate("About")} style={styles.button}>
-            <Text style={styles.buttonText}>About HackATL</Text>
+            <Text style={styles.buttonText}>Sponsors</Text>
           </TouchableOpacity>
         </View>
         <View style={styles.buttonContainer}>
           <TouchableOpacity onPress={() => navigate("General")} style={styles.button}>
-            <Text style={styles.buttonText}>General Information</Text>
+            <Text style={styles.buttonText}>Transportation</Text>
           </TouchableOpacity>
         </View>
-      </SafeAreaView>
+        <View style={styles.buttonContainer}>
+          <TouchableOpacity onPress={() => navigate("Prizes")} style={styles.button}>
+            <Text style={styles.buttonText}>Prizes</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.buttonContainer}>
+          <TouchableOpacity onPress={() => navigate("Rules")} style={styles.button}>
+            <Text style={styles.buttonText}>Rules</Text>
+          </TouchableOpacity>
+        </View>
+
+        <View style={styles.buttonContainer}>
+          <TouchableOpacity onPress={() => navigate("Packing")} style={styles.button}>
+            <Text style={styles.buttonText}>Packing</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.buttonContainer}>
+          <TouchableOpacity onPress={() => navigate("Wifi")} style={styles.button}>
+            <Text style={styles.buttonText}>Wifi</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.buttonContainer}>
+          <TouchableOpacity onPress={() => navigate("Sleep")} style={styles.button}>
+            <Text style={styles.buttonText}>Sleep & Hygiene</Text>
+          </TouchableOpacity>
+        </View>
+        </View>
+        </ScrollView>
+
+      // </SafeAreaView>
     )
   }
 }
@@ -254,7 +354,12 @@ const Faq = createStackNavigator(
   {
     Splash: SplashScreen,
     About: AboutScreen,
-    General: GeneralScreen
+    General: GeneralScreen, 
+    Rules: RulesScreen, 
+    Prizes: PrizesScreen,
+    Packing: PackingScreen,
+    Wifi: WifiScreen,
+    Sleep: SleepScreen, 
   }
 )
 
@@ -271,7 +376,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     justifyContent: 'center',
     alignItems: 'center',
-    paddingHorizontal: 10
+    paddingHorizontal: 10,
+    paddingTop: 20,
   },
   faqTitle: {
     fontFamily: 'Gotham-Book',
