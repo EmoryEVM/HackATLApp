@@ -14,8 +14,7 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View,
-  Image
+  View
 } from 'react-native'
 
 export default class Home extends Component {
@@ -24,7 +23,7 @@ export default class Home extends Component {
   }
 
   render() {
-    const { navigate } = this.props.navigation
+    let { navigate } = this.props.navigation
     return (
       <View style={styles.container}>
         {/* <Button 
