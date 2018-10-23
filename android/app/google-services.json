@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1021035928599",
+    "firebase_url": "https://hackatlapp.firebaseio.com",
+    "project_id": "hackatlapp",
+    "storage_bucket": "hackatlapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1021035928599:android:0bd32ee16f110522",
+        "android_client_info": {
+          "package_name": "com.hackatlapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1021035928599-4jnf07guga0038mskcaankphri9g4c9d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTGlELuv7gcLFBGSgIIsMvAtcDiDAlsoY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

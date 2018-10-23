@@ -27,6 +27,28 @@ import Inbox from './src/screens/Inbox';
 import Map from './src/screens/Map';
 import Pitch from './src/screens/Pitch';
 
+import firebase from 'react-native-firebase';
+
+firebase.messaging().hasPermission()
+  .then(enabled => {
+    if (enabled) {
+      // user has permissions
+    } 
+
+    else {
+   
+      // user doesn't have permission
+      firebase.messaging().requestPermission()
+        .then(() => {
+          // User has authorised  
+        })
+        .catch(error => {
+          // User has rejected permissions  
+        });
+    }
+  });
+  
+
 
 //This is the first page the app goes to, but this holds all the screens
 //and then navigates to the first one

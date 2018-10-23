@@ -11,6 +11,7 @@ import {
   Image, 
   ScrollView
 } from 'react-native'
+import firebase from 'react-native-firebase';
 
 
 
@@ -53,9 +54,25 @@ class Sponsors extends Component {
   }
 }
 
+
 class Home extends Component {
   static navigationOptions = {
     title: 'Home'
+  }
+
+  constructor() {
+    super();
+    this.ref = firebase.firestore().collection('todos');
+    this.state = {
+        textInput: '',
+    };
+  }
+
+  addTodo() {
+    this.ref.add({
+      title: 'hello',
+      complete: true,
+    });
   }
 
   render() {
@@ -63,7 +80,12 @@ class Home extends Component {
     return (
       <View style={styles.container}>
         <ScrollView>
-
+          {/* <Button
+            title={'Add TODO'}
+            disabled={false}
+            onPress={() => {this.addTodo}}
+          /> */}
+ 
         <View style={styles.logoWrapper}>
           <View style={styles.imageWrapper}>
             <Image
