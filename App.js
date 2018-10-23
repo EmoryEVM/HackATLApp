@@ -38,18 +38,16 @@ const Navigation = createBottomTabNavigator(
     Agenda:{
       screen:Agenda
     },
-    Faq:{
-      screen:Faq
+    Inbox:{
+      screen:Pitch
     },
-    // Inbox:{
-    //   screen:Inbox
-    // },
     Map:{
       screen:Map
     },
-    Pitch:{
-      screen:Pitch
+    Faq:{
+      screen:Faq
     },
+    
   },
   {
     navigationOptions: ({ navigation }) => ({
@@ -57,11 +55,15 @@ const Navigation = createBottomTabNavigator(
         const { routeName } = navigation.state;
         let iconName;
         if (routeName === 'Home') {
-          iconName = `ios-information-circle${focused ? '' : '-outline'}`;
+          iconName = `md-home`;
         } else if (routeName === 'Agenda') {
-          iconName = `ios-options${focused ? '' : '-outline'}`;
+          iconName = `md-menu`;
         } else if (routeName === 'Faq') {
-          iconName = `ios-options${focused ? '' : '-outline'}`;
+          iconName = `md-help`;
+        } else if (routeName === 'Map') {
+          iconName = `md-map`;
+        } else if (routeName === 'Inbox') {
+          iconName = `md-mail`;
         }
 
         // You can return any component that you like here! We usually use an

@@ -20,7 +20,7 @@ import {
 
 export default class Pitch extends Component {
   static navigationOptions = {
-    title: 'Pitch'
+    title: 'Inbox'
   }
 
   render() {

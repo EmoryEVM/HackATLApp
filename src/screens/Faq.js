@@ -172,6 +172,39 @@ class Shower extends Component {
   }
 }
 
+class General extends Component {
+  render() {
+    return (
+      <View>
+        <Text style={styles.faqTitle}>General Info</Text>
+        <View style={styles.contentContainer}>
+          <Text style={styles.subHeadline}> What is a Business Hackathon? </Text> 
+          <Text style={styles.faqInfo}>A business hackathon is a spinoff of the traditional Hackathon where hackers (developers and
+engineers), hipsters (designers) and hustlers (business-types) come together to develop
+a viable product/service and pitch it in a weekend.</Text>
+
+          <Text style={styles.subHeadline}> What if I Can't Code? </Text> 
+          <Text style={styles.faqInfo}>No business, design, or coding experience is required for you to participate in HackATL.
+According to Forbes Magazine, startups need three members—hackers, hustlers and hipsters.
+Whether you are a technical genius, a creative prodigy, or a practical business-type,
+there is a need for you.
+This year, HackATL strives to not only be a platform for you to build a business, but also a
+venue for you to learn how to do that. We’ll have workshops in ideation, design, web dev,
+and pitching all throughout the weekend to help you bring your ideas to life.</Text>
+
+          <Text style={styles.subHeadline}> Do I Have To Pick a Category? </Text> 
+          <Text style={styles.faqInfo}>Not a compulsion, but we highly recommend thinking about the categories as a way
+to be a more conscientious part of the society. While your idea does not have to
+revolve around any one category entirely, it is always great to give back in some
+form. Technology, Health & Wellness, Social Innovation, and Arts & Entertainment
+have all been a major part of the booming entrepreneurship industry and we
+encourage you to put on a social problem solving lens.</Text>
+        </View>
+      </View>
+    )
+  }
+}
+
 class AboutScreen extends Component {
   static navigationOptions = {
     title: 'About HackATL'
@@ -179,10 +212,16 @@ class AboutScreen extends Component {
   render() {
     return (
       <ScrollView style={styles.container}>
-        <View>
+        {/* <View>
           <Text style={styles.faqTitle}>Sponsors</Text>
           <Sponsors />
         </View>
+        */}
+        <View>
+     
+          <General />
+        </View>
+
 
       </ScrollView>
     )
@@ -438,6 +477,11 @@ const styles = StyleSheet.create({
     paddingVertical: 30,
     marginBottom: 20,
     borderRadius: 15
+  },
+  subHeadline: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginBottom: 10
   },
   buttonText: {
     fontFamily: 'Gotham-Light',
