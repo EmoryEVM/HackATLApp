@@ -15,7 +15,7 @@ import firebase from 'react-native-firebase';
 
 
 
-class Sponsors extends Component {
+class Sponsors1 extends Component {
   state = {
     images: [
       require('../../assets/images/sponsor1.png'),
@@ -28,13 +28,38 @@ class Sponsors extends Component {
       require('../../assets/images/sponsor8.png'),
       require('../../assets/images/sponsor9.png'),
       require('../../assets/images/sponsor10.png'),
+
+
+    ]
+  }
+
+  render() {
+    let image = this.state.images.map((img, key) => {
+      return (
+        <View style={styles.imageWrap} key={key} >
+          <Image source={img} style={styles.image} />
+        </View>
+      )
+    })
+    return (
+      <View style={styles.sponsorContainer}>
+        {image}
+      </View>
+    )
+  }
+}
+
+class Sponsors2 extends Component {
+  state = {
+    images: [
+
       require('../../assets/images/sponsor11.png'),
       require('../../assets/images/sponsor12.png'),
       require('../../assets/images/sponsor13.png'),
       require('../../assets/images/sponsor14.png'),
       require('../../assets/images/sponsor15.png'),
       require('../../assets/images/sponsor16.png'),
-      require('../../assets/images/sponsor17.png')
+      require('../../assets/images/sponsor17.png'),
     ]
   }
 
@@ -80,12 +105,9 @@ class Home extends Component {
     return (
       <View style={styles.container}>
         <ScrollView>
-          {/* <Button
-            title={'Add TODO'}
-            disabled={false}
-            onPress={() => {this.addTodo}}
-          /> */}
- 
+          <View> 
+            <Sponsors1/>
+          </View>
         <View style={styles.logoWrapper}>
           <View style={styles.imageWrapper}>
             <Image
@@ -95,11 +117,11 @@ class Home extends Component {
 
           </View>
 
-          <Text style={styles.dateText} >Oct 26-28 2018</Text>
+          {/*<Text style={styles.dateText} >Oct 26-28 2018</Text>*/}
         </View>
 
         <View> 
-          <Sponsors/>
+          <Sponsors2/>
         </View>
 
         </ScrollView>
@@ -131,6 +153,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: 20, 
+    marginBottom: -20
 
   },
   welcome: {
@@ -152,10 +175,10 @@ const styles = StyleSheet.create({
   },
   imageWrap: {
     flexDirection: 'row',
-    width: 80,
+    width: 50,
     marginLeft: 8,
     marginRight: 8,
-    marginBottom: 3
+    marginBottom: -30
   },
   image: {
     flex: 1,
