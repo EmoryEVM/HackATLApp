@@ -14,30 +14,21 @@ class Floor1 extends Component {
         <View style={styles.scheduleContainer}>
           <View>
             <Text style={styles.dayStyle}>FRI</Text>
-            <Text style={styles.timeStyle}>3:00PM-11:00PM</Text>
-            <Text style={styles.roomStyle}>100, 200, 300, 400, 500, 600, 800, 900, 901, 902</Text>
-            <Text style={styles.timeStyle}>4:00PM-11:00PM</Text>
-            <Text style={styles.roomStyle}>100, 200, 300, 400, 500, 600, 800, 900, 901, 902</Text>
-            <Text style={styles.timeStyle}>5:00PM-11:00PM</Text>
-            <Text style={styles.roomStyle}>100, 200, 300, 400, 500, 600, 800, 900, 901, 902</Text>
+            <Text style={styles.timeStyle}>7:00AM-8:00PM</Text>
+            <Text style={styles.roomStyle}>109, 110, 114, 115, 116</Text>
+
           </View>
           <View>
             <Text style={styles.dayStyle}>SAT</Text>
-            <Text style={styles.timeStyle}>3:00PM-11:00PM</Text>
-            <Text style={styles.roomStyle}>100, 200, 300, 400, 500, 600, 800, 900, 901, 902</Text>
-            <Text style={styles.timeStyle}>4:00PM-11:00PM</Text>
-            <Text style={styles.roomStyle}>100, 200, 300, 400, 500, 600, 800, 900, 901, 902</Text>
-            <Text style={styles.timeStyle}>5:00PM-11:00PM</Text>
-            <Text style={styles.roomStyle}>100, 200, 300, 400, 500, 600, 800, 900, 901, 902</Text>
+            <Text style={styles.timeStyle}>7:00AM-8:00PM</Text>
+            <Text style={styles.roomStyle}>109, 110, 114, 115, 116</Text>
+
           </View>
           <View>
             <Text style={styles.dayStyle}>SUN</Text>
-            <Text style={styles.timeStyle}>3:00PM-11:00PM</Text>
-            <Text style={styles.roomStyle}>100, 200, 300, 400, 500, 600, 800, 900, 901, 902</Text>
-            <Text style={styles.timeStyle}>4:00PM-11:00PM</Text>
-            <Text style={styles.roomStyle}>100, 200, 300, 400, 500, 600, 800, 900, 901, 902</Text>
-            <Text style={styles.timeStyle}>5:00PM-11:00PM</Text>
-            <Text style={styles.roomStyle}>100, 200, 300, 400, 500, 600, 800, 900, 901, 902</Text>
+            <Text style={styles.timeStyle}>7:00AM-8:00PM</Text>
+            <Text style={styles.roomStyle}>109, 110, 114, 115, 116</Text>
+
           </View>
         </View>
       </ScrollView>
@@ -54,30 +45,20 @@ class Floor1 extends Component {
         <View style={styles.scheduleContainer}>
           <View>
             <Text style={styles.dayStyle}>FRI</Text>
-            <Text style={styles.timeStyle}>3:00PM-11:00PM</Text>
-            <Text style={styles.roomStyle}>100, 200, 300, 400, 500, 600, 800, 900, 901, 902</Text>
-            <Text style={styles.timeStyle}>4:00PM-11:00PM</Text>
-            <Text style={styles.roomStyle}>100, 200, 300, 400, 500, 600, 800, 900, 901, 902</Text>
-            <Text style={styles.timeStyle}>5:00PM-11:00PM</Text>
-            <Text style={styles.roomStyle}>100, 200, 300, 400, 500, 600, 800, 900, 901, 902</Text>
+            <Text style={styles.timeStyle}>7:00AM-8:00PM</Text>
+
           </View>
           <View>
             <Text style={styles.dayStyle}>SAT</Text>
-            <Text style={styles.timeStyle}>3:00PM-11:00PM</Text>
-            <Text style={styles.roomStyle}>100, 200, 300, 400, 500, 600, 800, 900, 901, 902</Text>
-            <Text style={styles.timeStyle}>4:00PM-11:00PM</Text>
-            <Text style={styles.roomStyle}>100, 200, 300, 400, 500, 600, 800, 900, 901, 902</Text>
-            <Text style={styles.timeStyle}>5:00PM-11:00PM</Text>
-            <Text style={styles.roomStyle}>100, 200, 300, 400, 500, 600, 800, 900, 901, 902</Text>
+            <Text style={styles.timeStyle}>7:00AM-8:00PM</Text>
+            <Text style={styles.roomStyle}>202, 203, 233</Text>
+
           </View>
           <View>
             <Text style={styles.dayStyle}>SUN</Text>
-            <Text style={styles.timeStyle}>3:00PM-11:00PM</Text>
-            <Text style={styles.roomStyle}>100, 200, 300, 400, 500, 600, 800, 900, 901, 902</Text>
-            <Text style={styles.timeStyle}>4:00PM-11:00PM</Text>
-            <Text style={styles.roomStyle}>100, 200, 300, 400, 500, 600, 800, 900, 901, 902</Text>
-            <Text style={styles.timeStyle}>5:00PM-11:00PM</Text>
-            <Text style={styles.roomStyle}>100, 200, 300, 400, 500, 600, 800, 900, 901, 902</Text>
+            <Text style={styles.timeStyle}>7:00AM-8:00PM</Text>
+            <Text style={styles.roomStyle}>202, 203, 233</Text>
+
           </View>
         </View>
       </ScrollView>

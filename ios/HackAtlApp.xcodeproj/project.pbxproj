@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -44,6 +45,7 @@
 		55AEFC2999E447BE9868F8F8 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8149C8BE5C9A4D699A8FDEB8 /* FontAwesome5_Regular.ttf */; };
 		58D7D7F5ECBD452CBB195AB6 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A83EEAD854584C1183EB8E8C /* SimpleLineIcons.ttf */; };
 		59DA61B7A721CB60537AC302 /* libPods-HackAtlAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69F3DB206CC8D8DB812EB54D /* libPods-HackAtlAppTests.a */; };
+		730A2EFE217F9BA40055CED4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 730A2ED5217F9BA30055CED4 /* GoogleService-Info.plist */; };
 		79BA965EECA3407090D9DCE4 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 857A7CF23B27470482354232 /* Ionicons.ttf */; };
 		7F676F53CCF244F28AC789A2 /* Gotham Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A598D3E4D194B019C887FBF /* Gotham Light.otf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
@@ -407,6 +409,7 @@
 		648482E733BF40799FAC4A75 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		6629C4E09D84228942B81D8F /* Pods-HackAtlApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackAtlApp-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackAtlApp-tvOS/Pods-HackAtlApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		69F3DB206CC8D8DB812EB54D /* libPods-HackAtlAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HackAtlAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		730A2ED5217F9BA30055CED4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		7A059F89E2724E0883520A57 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		8149C8BE5C9A4D699A8FDEB8 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
@@ -577,6 +580,7 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
+				730A2ED5217F9BA30055CED4 /* GoogleService-Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
@@ -803,6 +807,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				0119B340D70F380A70D1705B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1268,6 +1273,7 @@
 				2C73E16AD4B742119383DB19 /* MaterialIcons.ttf in Resources */,
 				8F18185474D24143A8193ACE /* Octicons.ttf in Resources */,
 				58D7D7F5ECBD452CBB195AB6 /* SimpleLineIcons.ttf in Resources */,
+				730A2EFE217F9BA40055CED4 /* GoogleService-Info.plist in Resources */,
 				171C0F47E6494C7AA8A5A8B6 /* Zocial.ttf in Resources */,
 				531F4EBE008E462C8E7459BA /* Gotham-Book.ttf in Resources */,
 				9FA35E5E81EC4C9C8F093A90 /* Gotham-Light.ttf in Resources */,
@@ -1305,6 +1311,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		0119B340D70F380A70D1705B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HackAtlApp/Pods-HackAtlApp-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC/gRPCCertificates.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackAtlApp/Pods-HackAtlApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		0ECAD7916AC3410075FD4834 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

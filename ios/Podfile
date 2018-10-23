@@ -10,6 +10,8 @@ target 'HackAtlApp' do
   # Pods for HackAtlApp
 
   pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/Firestore'
 
   target 'HackAtlAppTests' do
     inherit! :search_paths

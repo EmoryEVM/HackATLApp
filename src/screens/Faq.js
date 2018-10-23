@@ -347,7 +347,7 @@ class SplashScreen extends Component {
         <View style={styles.splashContainer}>
         <View style={styles.buttonContainer}>
           <TouchableOpacity onPress={() => navigate("About")} style={[styles.button, styles.purpleOne]}>
-            <Text style={styles.buttonText}>Sponsors</Text>
+            <Text style={styles.buttonText}>General Info</Text>
           </TouchableOpacity>
         </View>
         <View style={styles.buttonContainer}>
